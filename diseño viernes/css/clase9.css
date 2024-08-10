@@ -1,0 +1,36 @@
+header{
+    width: 900px;
+    height: 250px;
+    background-color: black;
+    margin: auto;
+}
+nav{
+    width: 900px;
+    height:60px;
+    background-color:rgb(85,179,207);
+    margin: auto;
+    margin: top 5px;
+}
+Sol{
+    margin: auto;
+    width: 200px;
+    height:200px;
+    background-color: gold;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:100px;
+}
+footer{
+    width:900px;
+    height:6px;
+    background-color:rgb(243, 114,181);
+    margin: auto;
+    margin-top:5px;
+}
+/*asignarnombre a la animación*/
+animation-name:animesol;
+/* definir la duracion*/
+animation-duracion 5s;
+/* definir las repiticiones de la animacion */
+animation-ileration-count:infinite;
+

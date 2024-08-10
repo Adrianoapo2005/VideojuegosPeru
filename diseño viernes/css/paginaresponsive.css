@@ -1,0 +1,132 @@
+/* PASO 1: ESTILOS GENERALES */
+body{
+    background-color: rgb(252, 252, 252);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PASO 2: BANNER */
+.banner{
+    width: 1fr;
+    height: 450px;
+    background-image: url(/img/ea-sports-fc-24-3081930.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* PASO 3: BARRA DE MENU */
+.menu{
+    background-color: rgb(0, 0, 0);
+}
+
+.menu ul{
+    list-style-type: none; /* quitar la viñeta */
+    margin: 0;
+    padding: 0;
+    display: flex; /* usar flex para la distribución hor */
+    justify-content: center;
+}
+
+.menu ul li{
+    margin: 0 15px; /* espacio entree los elementos del menu */
+
+
+}
+
+.menu ul li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+
+}
+
+
+/* PASO 4: USAR HOVER PARA CREAR BOTONES INTERACTIVOS */
+.menu ul li a:hover{
+    background-color: rgb(53, 196, 112);
+
+}
+
+/* PASO 5: CONTENEDOR PADRE HISTORIA */
+.Acerca de{
+    margin-bottom: 2rem;
+}
+ 
+.Acerca de-contenido{
+    display: flex;
+}
+ 
+.Acerca de-contenido img{
+    margin-right: 30px;
+    box-shadow: 10px 5px 10px gray;
+    border-radius: 15px;
+}
+ 
+.Acerca de-contenido p{
+    flex: 1; /* el texto ocupara el espacio restante dentro del contenedor flex */
+    text-align: justify;
+}
+
+
+/* PASO 6: GALERIA */
+.caracteristicas{
+    margin-bottom: 2rem;
+}
+ 
+.caracteristicas-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+ 
+.caracteristicas-item img{
+    width: 100%; /* c/imagen ocupará el 100% del espacio del contenedor */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 3px 1px gray;
+}
+
+/* PASO 7: FOOTER */
+footer{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+}
+/*PASO 8:estilo para dispositivos moviles*/
+@media(max-width: 768px)
+.menu ul{
+    flex-direction:column;/* cambiar de dirección en columnas */
+    
+}
+.menu ul li{
+    margin: 0;
+    border-bottom: 2px solid rgb(166, 163 , 163);
+}
+
+.menu ul li a{
+    text-align: center;
+}
+
+.caracteristicas-contenido{
+    flex-direction: column;
+}
+.caracteristicas-contenido img{
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.caracteristicas-grid{
+    grid-template-columns: 1fr;
+}
+.acercade-conenido p{
+    padding: 35px;
+}
+/* PASO9: TABLETA*/
+@media(min-width: 769px) and (max-width: 1024px){
+    .caracteristicas-grid
+    grid-template-columns: repat(2, 1fr);
+}
+
+
